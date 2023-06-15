@@ -1,0 +1,59 @@
+# Pastas
+bin/
+obj/
+
+# Arquivos
+*.userprefs
+*.suo
+*.cache
+*.log
+*.vscode
+.vs/
+_UpgradeReport_Files/
+TestResults/
+
+# Arquivos de compilação
+[Bb]in/
+[Dd]ebug/
+[Rr]elease/
+obj/
+[Rr]elease
+[Dd]ebug
+.ipch/
+*.sbr
+*.sdf
+*.opensdf
+*.VC.db
+*.VC.db.bak
+*.sln.docstates
+*.sln.ide
+
+# Arquivos de publicação
+_PublishedWebsites/
+pubxml
+
+# Arquivos de dependências e pacotes
+packages/
+*.nupkg
+*.paket.references
+paket.lock
+
+# Ferramentas
+[Tt]ools/
+[Rr]oslyn/
+
+# Logs e arquivos temporários
+logs/
+temp/
+*.swp
+*~
+
+# Arquivos do Visual Studio
+*.csproj.user
+*.vshost.*
+*.vspscc
+*.vssscc
+*.obj
+*.cache
+*.ncrunch*
+*.sln.docstates

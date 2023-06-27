@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Application.ViewModel;
+using Microsoft.AspNetCore.Mvc;
 
 namespace Api.Controllers
 {
@@ -6,9 +7,15 @@ namespace Api.Controllers
     [Route("[controller]")]
     public class ContasController : ControllerBase
     {
-        [HttpGet("Listar")]
-        public IActionResult Index()
+        [HttpPost("Listar")]
+        public IActionResult Index(ContaViewModel contaViewModel)
         {
+            ContaViewModel conta = contaViewModel;
+
+            if (conta == null)
+            {
+                return BadRequest();
+            }
             return Ok();
         }
     }

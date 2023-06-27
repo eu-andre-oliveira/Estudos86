@@ -1,4 +1,5 @@
-﻿using Application.ViewModel;
+﻿using Application.Service;
+using Application.ViewModel;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Api.Controllers
@@ -14,9 +15,12 @@ namespace Api.Controllers
 
             if (conta == null)
             {
-                return BadRequest();
+                return BadRequest("dados nao informados");
             }
-            return Ok();
+            ContasService contasService = new ContasService();
+            List<ContaViewModel> contaUpper =  contasService.ListarContas(conta);
+
+            return Ok(contaUpper);
         }
     }
 }
